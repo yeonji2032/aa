@@ -1,0 +1,185 @@
+/* .section:nth-child(even) {background: #333;color: #fff;text-align: center;} 세션 구분*/
+
+
+#bg {position: absolute;width: 100%;width: auto;height: auto;z-index: -999;overflow: hidden;}
+.section {background: url(./bg.png);}
+.section .container {display:flex;width:1200px;margin:0 auto;}
+.section .container>* {flex:1;}
+.section h3 {position: absolute;top: 60px;left: 60px;font-size: 80px;font-weight: 900;
+    ;color: #333333; text-shadow: 4px 4px 0px #FFFFFF, 8px 8px 0px rgba(0,0,0,0.3);}
+.section .txt {background: rgba(255, 255, 255, 0.3);}
+.section h4 {font-size: 40px;font-weight: 900;margin-bottom:20px;}
+.section dt {font-size:18px;font-weight: 500;margin-bottom:20px;display: flex;}
+.section dd {font-size:18px;font-weight:300;line-height: 1.4;}
+
+
+header {position:fixed;top:60px;right:150px;z-index:999;font-size: 20px;}
+nav {position:fixed;bottom:60px;right:60px;z-index:999;width:40px;}
+nav li {position:relative;}
+
+nav li a {display:block;text-indent:-9999px;}
+nav li a:after {content:"";display:block;width: 50%;height:10px;border-radius: 30%;background:#333;position:absolute;top:6px;right:0;transition:0.2s;}
+nav li.on a:after {width: 100%;border-radius: 20%}
+
+
+
+/* 인트로 */
+.m01>*{display: flex;}
+.m01 .parallelogram {width: 300px; height: 100vh; transform: skew(25deg); background:url(bg02.gif) ;margin-left: 220px;}
+.m01 .triangle-up {position: absolute;width:0;height:0;border-left: 160px solid transparent;
+    border-right: 150px solid transparent;border-bottom: 200px solid #9999992a;bottom: 0;left:200px;}
+.m01 .triangle-topright {position:absolute;top: 0;right: 0;width: 0;height: 0;border-top: 200px solid #99999980;border-left: 500px solid transparent;}
+
+
+.m01 .txt {padding: 300px;}
+.m01 h2{font-size: 60px ;font-weight: 500;margin-bottom: 10px;} 
+.m01 p{font-size: 110px ;font-weight: 900;margin-bottom: 10px;} 
+.m01 strong {font-size: 14px;}
+.m01 img {vertical-align:bottom;margin-bottom: 5px;
+    animation: rotate_image 5s linear infinite;transform-origin: 50% 50%;} 
+    /*transform 종류, 시간, 동일한 속도; 앵글포인트위치 이후 키프레임 적용*/
+    @keyframes rotate_image{ 
+        100% {transform: rotate(360deg);}
+    }
+
+
+/*세션 01 02 슬라이더 공통사항*/
+.pt_slider {margin:0 auto;width:1200px;}
+iframe {width:500px;height:281px;margin: 0 20px;border: none;border-radius: 10px;}
+.xi-angle-left {margin-left: -700px;border-radius: 50% 20% 20% 50%;}
+.xi-angle-right {margin-left: 700px;border-radius: 20% 50% 50% 20%;}
+.slick-dots {text-align:center}
+.slick-dots button {display:none;}
+.slick-dots li {display:inline-block;width:30px;height:15px;background:#333;border-radius:40%;margin:30px 5px;}
+.slick-dots li.slick-active {border: 5px solid #000;background:#fff;}
+
+
+
+
+/*세션 01*/
+.pf01 .container>div {padding: 100px 30px 0 100px;margin: auto;}
+.pf01 .pt_slider figure {padding:100px 0px;position:relative;padding-top:200px;}
+.pf01 figure img {width:100%;position:absolute;bottom:80px;left:0px;z-index: -1;}
+.pf01 i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:40px;cursor:pointer;
+    z-index: 999;color:#fff;background: #333;opacity: 0.7;padding: 5px;}
+
+
+
+
+/*세션 02*/
+.pf02 .container>div {padding: 100px 100px 0 30px;margin: auto;}
+.pf02 .pt_slider figure {order:2; padding:150px 0px;position:relative;padding-bottom:150px;}
+/*{order:2} flex 순서 변경 / float:left -> display:flex;display:grid; */
+.pf02 figure img {width:100%;position:absolute;bottom: 80px;left:0px;z-index: -1;}
+.pf02 i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:40px;cursor:pointer;
+    z-index: 999;color:#fff;background: #333;opacity: 0.7;padding: 5px;}
+
+
+
+
+
+
+/*세션 03*/
+.pf03 .pt_slider {z-index: 999;position: relative;margin-top: 100px;}
+.pf03 .pt_slider:before {content:"";display: block;width: 1260px ; height: 415px;position: absolute;top:40px ; left: -30px;
+    border: 2px solid#000;border-radius: 20px;background: #ffffff;z-index: -1;}
+.pf03 .pt_slider:after {content:"";display: block;width: 1280px ; height: 435px;position: absolute;top:30px ; left: -40px;
+    border: 3px solid#000;border-radius: 20px;background: #ffffff50;z-index: -2;}
+.pf03 .pt_slider figure {padding: 80px 0}
+.pf03 .pt_slider figure img {width:100%}
+
+.pf03 .txt {padding:120px 0 0 70px;background: none;}
+.pf03 h2 {font-size: ;}
+.pf03 span {font-size: 18px;font-weight: 700;line-height:1.6;}
+.pf03 p {margin-bottom:30px;}
+.pf03 i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);font-size:600px;cursor:pointer;}
+
+.pf03 i.xi-arrow-left {color:#333;margin-left:-700px;}
+.pf03 i.xi-arrow-right {color:#333;margin-left:700px;}
+
+
+
+
+
+
+/*세션 04*/
+.pf04 .container>* {background: rgba(255, 255, 255, 0.1)}
+.pf04 figure {text-align: center;margin:0 100px 0 0;position: relative;padding: 30px 0;}
+.pf04 figure:before{content:"";position: absolute;display: block;width: 480px;height: 480px;top:20px;left:40px;border: 2px solid #000;z-index: -1;}
+.pf04 figure:after{content:"";position: absolute;display: block;width: 480px;height: 480px;top:5px;left:25px;border: 5px solid #000;z-index: -1;}
+.pf04 figure img {width:450px;}
+.pf04 figure div {margin-top: 35px;}
+.pf04 strong {font-size: 18px;font-weight: 500;line-height: 50px;}
+.pf04 p {font-size: 24px;font-weight: 700;line-height: 40px;}
+.pf04 span {font-size: 24px ; font-weight: 900;}
+.pf04 ul {margin: 20px 0;font-size: 18px;line-height: 1.4;}
+.pf04 hr {margin:20px 0;border:none;border-top:2px dashed #999}
+
+
+/* 실습때 mopen 설정
+.info {background:#333;color:#f2f2f2;text-align:right;padding:30px 0;}
+.info .txt {flex:3;align-items: center;padding:50px 0;}
+.info figure img {width:150px;border-radius:50%;margin-right:40px;}*/
+
+
+
+
+
+
+
+
+
+
+
+footer {position:fixed;bottom:60px;left:60px;z-index:999;line-height: 1.4;}
+
+#mopen {position:fixed;top:60px;right:60px;width:30px;height:30px;overflow:hidden;z-index:1001;cursor: pointer;}
+#mopen>span {position:absolute;width:100%;height:3px;left:0;background:#333;transition:0.3s;}
+#mopen>span:nth-child(1) {top:0;}
+#mopen>span:nth-child(2) {top:10px;}
+#mopen>span:nth-child(3) {top:10px;}
+#mopen>span:nth-child(4) {top:20px;}
+
+#mopen.on>span:nth-child(1) {left:100%;}
+#mopen.on>span:nth-child(2) {transform:rotate(45deg);}
+#mopen.on>span:nth-child(3) {transform:rotate(-45deg);}
+#mopen.on>span:nth-child(4) {left:-100%;}
+
+
+
+
+#cover_nav {position:fixed;top:0;right:0;background:#f2f2f2 url(./bg.png);width:100%;height:0;overflow:hidden;transition:0.5s;z-index:1000;}
+#cover_nav.on {height:100vh;}
+
+#cover_nav .txt {position:absolute;top:50%;left:50%;width:1200px;transform:translate(-50%,-50%)}
+#cover_nav li {font-size:100px; font-weight:900; text-align: center;margin-bottom: 30px; -webkit-text-stroke:1px;
+    ; transition: 1s;color: #999;}
+#cover_nav li:hover {font-size:100px; font-weight:900; text-align: center;margin-bottom: 30px;
+ -webkit-text-stroke:3px #333;color: #000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hr {margin: 0;border:none;border-top:1px dashed #999} dashed */
+
+/*#cover_nav .txt h3 {font-size:30px;font-weight:100;letter-spacing:1rem;text-transform:uppercase;대문자 margin-bottom:30px;}
+#cover_nav .txt p {font-size:14px;font-weight:300;line-height:1.4;}
+
+#cover_nav .link li {line-height:2;text-transform:uppercase;}
+#cover_nav .link li:before {content:"\e9c9";font-family: xeicon!important;margin-right:20px;color:#f00;font-size:20px;vertical-align:middle;transition:0.4s;}
+
+#cover_nav .link li:hover:before {color:#369;margin-right:40px;} 
+#cover_nav .link li:hover:after {content:"MORE";font-size:10px;margin-left:30px;color:#999;}
+ /*icon코드 우선 html에 i입력 후 사이트검사 통해서 코드와 \e928 font-family를 가져온다* 다량의 동일한 아이콘를 수정할때 용이*/
+
