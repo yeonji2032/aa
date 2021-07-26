@@ -32,7 +32,7 @@ nav li.on a:after {width: 100%;border-radius: 20%}
 
 
 .m01 .txt {padding: 300px;}
-.m01 h2{font-size: 60px ;font-weight: 500;margin-bottom: 10px;} 
+.m01 h2{font-size: 60px ;font-weight: 500;margin-bottom: 10px;padding-left: 10px;} 
 .m01 p{font-size: 110px ;font-weight: 900;margin-bottom: 10px;} 
 .m01 strong {font-size: 14px;}
 .m01 img {vertical-align:bottom;margin-bottom: 5px;
